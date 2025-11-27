@@ -1,0 +1,59 @@
+$Models
+                          P_Value       AIC
+Null model                      0 1149.0916
+Saturated model                 1  206.6533
+Independence model              0  401.3110
+Uniform association model       0  401.7093
+Symmetry model                  0  668.4288
+Quasi-symmetry model            0  263.6633
+Quasi-independence model        0  349.8017
+Row effects model               0  356.2493
+Column effects model            0  337.5801
+
+$Best_Model
+
+Call:
+glm(formula = y ~ f * c, family = poisson)
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  4.718499   0.094491  49.936  < 2e-16 ***
+fF2          0.468887   0.120479   3.892 9.95e-05 ***
+fF3          0.656780   0.116440   5.641 1.70e-08 ***
+fF4          0.387447   0.122430   3.165 0.001553 ** 
+fF5          0.258235   0.125798   2.053 0.040094 *  
+cC2         -0.748207   0.166723  -4.488 7.20e-06 ***
+cC3         -0.055060   0.135508  -0.406 0.684508    
+cC4         -1.134980   0.191589  -5.924 3.14e-09 ***
+cC5         -0.786673   0.168927  -4.657 3.21e-06 ***
+fF2:cC2     -0.701509   0.239150  -2.933 0.003353 ** 
+fF3:cC2     -0.842882   0.234848  -3.589 0.000332 ***
+fF4:cC2     -0.081072   0.218509  -0.371 0.710618    
+fF5:cC2      0.542158   0.207768   2.609 0.009069 ** 
+fF2:cC3     -0.478366   0.182956  -2.615 0.008932 ** 
+fF3:cC3     -0.385745   0.173742  -2.220 0.026404 *  
+fF4:cC3      0.580326   0.167354   3.468 0.000525 ***
+fF5:cC3      0.411045   0.173465   2.370 0.017807 *  
+fF2:cC4     -0.291206   0.256025  -1.137 0.255366    
+fF3:cC4      0.478200   0.224198   2.133 0.032929 *  
+fF4:cC4      0.624154   0.229930   2.715 0.006637 ** 
+fF5:cC4     -0.080554   0.258571  -0.312 0.755394    
+fF2:cC5     -1.567499   0.304871  -5.142 2.73e-07 ***
+fF3:cC5      0.065355   0.206615   0.316 0.751765    
+fF4:cC5     -0.001784   0.218930  -0.008 0.993498    
+fF5:cC5     -0.822765   0.264416  -3.112 0.001861 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance:  9.9044e+02  on 24  degrees of freedom
+Residual deviance: -1.7764e-14  on  0  degrees of freedom
+AIC: 206.65
+
+Number of Fisher Scoring iterations: 3
+
+
+$Marginal_Homogeneity_Test
+        devSI dfSI    devQS dfQS dev_diff df_diff pval
+[1,] 481.7755   10 69.01001    6 412.7655       4    0
