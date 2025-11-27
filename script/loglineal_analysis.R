@@ -1,5 +1,4 @@
 # Load the data from an Excel file
-setwd("C:\\Users\\alexc\\Documents\\GitHub\\loglineal-models")
 tablasb <- read_excel("tablasb.xlsx",col_names = FALSE)
 
 # Extract individual 5x5 contingency tables from the Excel file
