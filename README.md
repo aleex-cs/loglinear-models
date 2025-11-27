@@ -28,7 +28,7 @@ For each model, we calculate:
 We select the **best-fitting model** based on minimum AIC and interpret the estimated parameters, checking the adjusted odds ratios. Additionally, we test for **marginal homogeneity** between rows and columns (SI vs QS models).
 
 ## Code
-All analysis is implemented in R. The script is: `scripts/loglinear_analysis.R`
+All analysis is implemented in R. The script is: `script/loglinear_analysis.R`
 
 
 ### Example Usage
