@@ -43,7 +43,7 @@ t1 <- tablasb[1:5, ]
 t2 <- tablasb[8:12, ]
 
 # Run analysis
-source("scripts/loglinear_analysis.R")
+source("script/loglinear_analysis.R")
 models(t1)
 models(t2)
 ```
